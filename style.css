@@ -259,3 +259,12 @@ html { scroll-padding-top: 5rem; }
 .paper-box-image a { text-decoration:none; }
 .paper-box-image .badge { z-index:1; left:.5rem; top:.45rem; margin:0; pointer-events:none; }
 .story-section[id] { scroll-margin-top:2.5rem; }
+
+#publications .paper-box-image img.paper-original-figure {
+  display: block;
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: white;
+}
