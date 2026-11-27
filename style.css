@@ -259,17 +259,3 @@ html { scroll-padding-top: 5rem; }
 .paper-box-image a { text-decoration:none; }
 .paper-box-image .badge { z-index:1; left:.5rem; top:.45rem; margin:0; pointer-events:none; }
 .story-section[id] { scroll-margin-top:2.5rem; }
-
-.research-interests {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: .3em 1em;
-  padding-inline-start: 0;
-  list-style: disc inside;
-}
-
-.research-interests > li {
-  max-width: 100%;
-  margin: 0;
-}
