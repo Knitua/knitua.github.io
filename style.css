@@ -268,3 +268,8 @@ html { scroll-padding-top: 5rem; }
   object-fit: contain;
   background: white;
 }
+
+#catai .paper-original-figure {
+  box-sizing: border-box;
+  padding-top: 2.1rem;
+}
