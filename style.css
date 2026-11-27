@@ -158,14 +158,6 @@ body {
 		  box-shadow: 0 14px 34px rgba(22, 45, 72, 0.1);
 		}
 
-		#news > div::-webkit-scrollbar {
-		  width: 7px;
-		}
-
-		#news > div::-webkit-scrollbar-thumb {
-		  border-radius: 999px;
-		  background: linear-gradient(180deg, rgba(236, 112, 125, 0.65), rgba(108, 149, 181, 0.72));
-		}
 
 		#news p {
 		  margin: 0.52rem 0;
@@ -211,10 +203,6 @@ body {
 		    font-size: clamp(1.25rem, 5vw, 1.58rem);
 		  }
 
-		  #news > div {
-		    height: 180px !important;
-		  }
-
 		  .paper-box {
 		    padding-left: 0.82rem;
 		    padding-right: 0.82rem;
@@ -247,8 +235,19 @@ body {
 html { scroll-padding-top: 5rem; }
 #main { padding-bottom:3em; }
 .author__avatar img { aspect-ratio:1; object-fit:cover; width:100%; }
-.school-mark { width:20px; height:auto; display:inline-block; vertical-align:middle; }
-.news-list { height:200px; width:100%; overflow:auto; }
+.career-list { list-style:none; padding:0; margin:0; }
+.career-list > li { padding:.7rem 0; margin:0; }
+.career-list > li + li { border-top:1px solid rgba(108,149,181,.2); }
+.institutions > li { display:flex; align-items:flex-start; gap:.85rem; }
+.school-mark { width:36px; height:36px; flex:none; object-fit:contain; margin-top:.15rem; }
+.career-entry { flex:1; min-width:0; }
+.career-heading { display:flex; align-items:baseline; justify-content:space-between; gap:.3rem 1rem; }
+.career-date { flex:none; font-size:.9em; color:#485f78; }
+.award-detail { display:block; color:#405974; font-size:.92em; }
+@media(max-width:680px) { .career-heading { flex-direction:column; gap:0; } }
+#news summary { cursor:pointer; padding:.5em .8em; font-weight:bold; }
+.older-news .when-open, .older-news[open] .when-closed { display:none; }
+.older-news[open] .when-open { display:inline; }
 .paper-box-image a { display:block; }
 .paper-box-image > div { width:100%; }
 .beyond-photo { width:min(100%, 350px); border-radius:.72rem; }
